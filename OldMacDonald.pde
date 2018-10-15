@@ -1,7 +1,10 @@
-
-void setup()
-{
-	//your variable declarations and
-	//System.out.println() statements here
+public void setup() {     
+    Cow cow = new Cow("cow", "moo");   
+    Chick chick = new Chick("chick", "cluck");
+    Pig pig = new Pig ("pig", "oink");
+    Farm farm = new Farm();
+    farm.animalSounds();
+    System.out.println(cow.getType() + " goes " + cow.getSound()); 
+    System.out.println(chick.getType() + " goes " + chick.getSound());
+    System.out.println(pig.getType() + " goes " + pig.getSound());
 }
-
